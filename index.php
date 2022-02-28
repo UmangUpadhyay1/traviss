@@ -34,6 +34,12 @@
 
         </form>
         <?php 
+        $serverName = "tcp:traviss.database.windows.net";
+        $connectionOptions = array (
+        "Database" => "acholder" ,
+        "UID" => "umang" ,
+        "PWD" => "Um@ng@2000");
+        $conn = sqlsrv_connect($traviss.database.windows.net , $connectionOptions) ;
         $connection = mysqli_connect("localhost","root","");
         $db = mysqli_select_db($connection,'acholders');
           if(isset($_POST['search']))
